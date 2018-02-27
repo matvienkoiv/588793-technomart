@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Илья Матвиенко](https://up.htmlacademy.ru/htmlcss/20/user/588793).
-* Наставник: [Магомед Кандаев] (https://htmlacademy.ru/profile/id161600).
+* Наставник: [Магомед Кандаев](https://htmlacademy.ru/profile/id161600).
 
 ---
 
