@@ -11,8 +11,8 @@
           <img src="http://placehold.it/150x100" alt="Логотип Техномарт">
         </div>
         <div class="header-search">
-          <label for="search">Поиск</label>
-            <input name="search" type="search">
+          <label for="sea">Поиск</label> <!--for не ссылается на скрытый элемент name, только на id--> 
+            <input type="search" id="sea" name="sea">
         </div>
         <div class="favorites">
             <a href="#">Закладки:
@@ -32,7 +32,7 @@
       <div class="header-number">
         <p>+7 (812) 555-05-55
       </div>
-      <p "header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+      <p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       <nav class="header-log">
         <ul class="user-log">
           <li><a href="#">Войти</a></li>
