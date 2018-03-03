@@ -72,10 +72,10 @@
       <section class="main-popular">
         <h2>Популярные товары</h2>
         <a href="#">Все популярные товары</a>
-        <ul class="popular-items"><!--Не знаю, насколько уместен в разметке будет тег strike. Логично без исп-я CSS, текст зачеркуть-->
-          <li><img src="http://placehold.it/100x100" alt="Перфофратор BOSCH BFG 9000">Перфофратор BOSCH BFG 9000<strike> 32500 Р. </strike><button>25500 Р.</button></li>
-          <li><img src="http://placehold.it/100x100" alt="Перфофратор BOSCH BFG 3000">Перфофратор BOSCH BFG 3000<strike> 22500 Р. </strike><button>15500 Р.</button></li>
-          <li><img src="http://placehold.it/100x100" alt="Перфофратор BOSCH BFG 6000">Перфофратор BOSCH BFG 6000<strike> 30500 Р. </strike><button>25500 Р.</button></li>
+        <ul class="popular-items">
+          <li><img src="http://placehold.it/100x100" alt="Перфофратор BOSCH BFG 9000">Перфофратор BOSCH BFG 9000 <span class="old-price">32500 Р.</span><button>25500 Р.</button></li>
+          <li><img src="http://placehold.it/100x100" alt="Перфофратор BOSCH BFG 3000">Перфофратор BOSCH BFG 3000 <span class="old-price">22500 Р.</span><button>15500 Р.</button></li>
+          <li><img src="http://placehold.it/100x100" alt="Перфофратор BOSCH BFG 6000">Перфофратор BOSCH BFG 6000 <span class="old-price">30500 Р.</span><button>25500 Р.</button></li>
           <li class="new"><img src="http://placehold.it/100x100" alt="Перфофратор BOSCH BFG 2000">Перфофратор BOSCH BFG 2000<button>12500 Р.</button></li> <!--Обозначил классом, чтобы в CSS добавить картинку, в HTML сомнительно-->
         </ul>
       </section>
@@ -93,7 +93,7 @@
           <li>metabo</li>
         </ul>
       </section>
-      <section="services">
+      <section class="services">
         <h2>Сервисы</h2>
         <p>Хороший интернет-магазин отличнается от плохого не только ценами! 
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
@@ -114,6 +114,7 @@
         </div>
       </section>
       <article class="block-corp-techno-about">
+        <h2>Наши приемущества</h2><!--Скорет CSS-->
         <section class="corp-about">
           <h2>Компания "Техномарт"</h2>
           <p>Настоящий мужской шоппинг начинается здесь! 
@@ -139,5 +140,6 @@
         </section>
       </article>
     </main>
+    
   </body>
 </html>
