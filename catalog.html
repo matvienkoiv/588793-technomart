@@ -26,13 +26,17 @@
       </nav>
       <div class="header-info-login">
         <p class="header-about">Интернет-магазин строительных материалов и инструментов для ремонта
-        <p class="number">+7 (812) 555-05-55
-        <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        <p><a class="user-name" href="#">Равшан Джамшутович</a>
-        <ul class="user-info">
-          <li class="orders"><a href="#">Мои заказы</a></li>
-          <li class="my-acc"><a href="#">Личный кабинет</a></li>
-        </ul>
+        <div class="header-contacts">
+          <p class="number">+7 (812) 555-05-55
+          <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </div>
+        <div class="user-cabinet">
+          <p><a class="user-name" href="#">Равшан Джамшутович</a>
+          <ul class="user-info">
+            <li class="orders"><a href="#">Мои заказы</a></li>
+            <li class="my-acc"><a href="#">Личный кабинет</a></li>
+          </ul>
+        </div>
       </div>
       <nav class="header-menu">
         <ul class="main-menu">
@@ -53,87 +57,91 @@
         <li class="list-catalog"><a href="#">Инструмент</a></li>
         <li class="list-catalog"><a href="#">Перфораторы</a></li>
       </ul>
-      <h2 class="product-type">Перфораторы</h2>
-      <form action="/echo" method="post">
-        <h3>Фильтр</h3>
-        <fieldset class="filter-price">
-          <label for="price">Цена:</label>
-            <span class="min-price">0</span><input type="range" min="0" max="30000" step="1" id="price"><span class="max-price">3000</span>
-        </fieldset>
-        <fieldset class="vendors">
-          <label>Производители:</label>
-          <input type="checkbox" value="v1" name="Bosch" checked>Bosch
-          <input type="checkbox" value="v2" name="Interskol">Интерскол
-          <input type="checkbox" value="v3" name="Makita" checked>makita
-          <input type="checkbox" value="v4" name="Dewalt">Dewalt
-          <input type="checkbox" value="v5" name="Hitachi">Hitachi
-        </fieldset>
-        <fieldset class="power-type">
-          <label>Питание:</label>
-          <input type="radio" name="type" value="t1">Аккумуляторные
-          <input type="radio" name="type" value="t2">Сетевые
-        </fieldset>
-        <input type="button" value="Показать" name="show-btn">
-      </form>
-      <section class="items">
-        <div class="sort">
-          <h3 class="sort-label">Сортировка</h3>
-          <div class="sort-type">
-            <a class="sort-price" href="#">По цене</a>
-            <a class="sort-type" href="#">По типу</a>
-            <a class="sort-functional" href="#">По функционалу</a>
+      <section class="product-line">
+        <h2 class="product-type">Перфораторы</h2>
+        <form action="/echo" method="post">
+          <h3>Фильтр</h3>
+          <fieldset class="filter-price">
+            <label for="price">Цена:</label>
+              <span class="min-price">0</span><input type="range" min="0" max="30000" step="1" id="price"><span class="max-price">3000</span>
+          </fieldset>
+          <fieldset class="vendors">
+            <label>Производители:</label>
+            <input type="checkbox" value="v1" name="Bosch" checked>Bosch
+            <input type="checkbox" value="v2" name="Interskol">Интерскол
+            <input type="checkbox" value="v3" name="Makita" checked>makita
+            <input type="checkbox" value="v4" name="Dewalt">Dewalt
+            <input type="checkbox" value="v5" name="Hitachi">Hitachi
+          </fieldset>
+          <fieldset class="power-type">
+            <label>Питание:</label>
+            <input type="radio" name="type" value="t1">Аккумуляторные
+            <input type="radio" name="type" value="t2">Сетевые
+          </fieldset>
+          <input type="button" value="Показать" name="show-btn">
+        </form>
+        <section class="items">
+          <div class="sort">
+            <h3 class="sort-label">Сортировка</h3>
+            <div class="sort-type">
+              <a class="sort-price" href="#">По цене</a>
+              <a class="sort-type" href="#">По типу</a>
+              <a class="sort-functional" href="#">По функционалу</a>
+            </div>
+            <div class="up-down">
+              <a class="type-ascending" href="#">По возрастанию</a>
+              <a class="type-descending" href="#">По убыванию</a>
+            </div>
           </div>
-          <div class="up-down">
-            <a class="type-ascending" href="#">По возрастанию</a>
-            <a class="type-descending" href="#">По убыванию</a>
+          <div class="items-pull">  
+            <ul class="items">
+              <li><img src="http://placehold.it/100x100" alt="Перфоратор BOSCH BFG 3000">Перфофратор BOSCH BFG 3000 
+                <span class="old-price">22500 Р.</span><button>15500 Р. </button>
+                <div class="icon-hover"><button>Купить </button><button>В закладки</button></div>
+              </li>
+              <li><img src="http://placehold.it/100x100" alt="Перфоратор BOSCH BFG 6000">Перфофратор BOSCH BFG 6000 
+                <span class="old-price">30500 Р.</span><button>25500 Р. </button>
+                <div class="icon-hover"><button>Купить </button><button>В закладки</button></div>
+              </li>
+              <li class="new"><img src="http://placehold.it/100x100" alt="Перфофратор BOSCH BFG 2000">Перфофратор BOSCH BFG 2000 
+                <button>12500 Р. </button>
+                <div class="icon-hover"><button>Купить </button><button>В закладки</button></div>
+              </li>
+              <li><img src="http://placehold.it/100x100" alt="Перфоратор BOSCH BFG 3000">Перфофратор BOSCH BFG 3000 
+                <span class="old-price">22500 Р.</span><button>15500 Р. </button>
+                <div class="icon-hover"><button>Купить </button><button>В закладки</button></div>
+              </li>
+              <li class="new"><img src="http://placehold.it/100x100" alt="Перфофратор BOSCH BFG 6000">Перфофратор BOSCH BFG 6000 
+                <span class="old-price">30500 Р. </span><button>25500 Р. </button>
+                <div class="icon-hover"><button>Купить </button><button>В закладки</button></div>
+              </li>
+              <li><img src="http://placehold.it/100x100" alt="Перфоратор BOSCH BFG 2000">Перфофратор BOSCH BFG 2000 
+                <button>12500 Р. </button>
+                <div class="icon-hover"><button>Купить </button><button>В закладки</button></div>
+              </li>
+              <li class="new"><img src="http://placehold.it/100x100" alt="Перфофратор BOSCH BFG 3000">Перфофратор BOSCH BFG 3000 
+                <span class="old-price">22500 Р.</span><button>15500 Р. </button>
+                <div class="icon-hover"><button>Купить </button><button>В закладки</button></div>
+              </li>
+              <li><img src="http://placehold.it/100x100" alt="Перфоратор BOSCH BFG 6000">Перфофратор BOSCH BFG 6000 
+                <span class="old-price">30500 Р.</span><button>25500 Р. </button>
+                <div class="icon-hover"><button>Купить </button><button>В закладки</button></div>
+              </li>
+              <li><img src="http://placehold.it/100x100" alt="Перфоратор BOSCH BFG 2000">Перфофратор BOSCH BFG 2000 
+                <button>12500 Р. </button>
+                <div class="icon-hover"><button>Купить </button><button>В закладки</button></div>
+              </li>
+            </ul>
           </div>
-        </div>
-        <div class="items-pull">  
-          <ul class="items">
-            <li><img src="http://placehold.it/100x100" alt="Перфоратор BOSCH BFG 3000">Перфофратор BOSCH BFG 3000 
-              <span class="old-price">22500 Р.</span><button>15500 Р.</button>
-              <div class="icon-hover"><p><button>Купить</button><br><button>В закладки</button></div>
-            </li>
-            <li><img src="http://placehold.it/100x100" alt="Перфоратор BOSCH BFG 6000">Перфофратор BOSCH BFG 6000 
-              <span class="old-price">30500 Р.</span><button>25500 Р.</button>
-              <div class="icon-hover"><p><button>Купить</button><br><button>В закладки</button></div>
-            </li>
-            <li class="new"><img src="http://placehold.it/100x100" alt="Перфофратор BOSCH BFG 2000">Перфофратор BOSCH BFG 2000 
-              <button>12500 Р.</button>
-              <div class="icon-hover"><p><button>Купить</button><br><button>В закладки</button></div>
-            </li>
-            <li><img src="http://placehold.it/100x100" alt="Перфоратор BOSCH BFG 3000">Перфофратор BOSCH BFG 3000 
-              <span class="old-price">22500 Р.</span><button>15500 Р.</button>
-              <div class="icon-hover"><p><button>Купить</button><br><button>В закладки</button></div>
-            </li>
-            <li class="new"><img src="http://placehold.it/100x100" alt="Перфофратор BOSCH BFG 6000">Перфофратор BOSCH BFG 6000 
-              <span class="old-price">30500 Р.</span><button>25500 Р.</button>
-              <div class="icon-hover"><p><button>Купить</button><br><button>В закладки</button></div>
-            </li>
-            <li><img src="http://placehold.it/100x100" alt="Перфоратор BOSCH BFG 2000">Перфофратор BOSCH BFG 2000 
-              <button>12500 Р.</button>
-              <div class="icon-hover"><p><button>Купить</button><br><button>В закладки</button></div>
-            </li>
-            <li class="new"><img src="http://placehold.it/100x100" alt="Перфофратор BOSCH BFG 3000">Перфофратор BOSCH BFG 3000 
-              <span class="old-price">22500 Р.</span><button>15500 Р.</button>
-              <div class="icon-hover"><p><button>Купить</button><br><button>В закладки</button></div>
-            </li>
-            <li><img src="http://placehold.it/100x100" alt="Перфоратор BOSCH BFG 6000">Перфофратор BOSCH BFG 6000 
-              <span class="old-price">30500 Р.</span><button>25500 Р.</button>
-              <div class="icon-hover"><p><button>Купить</button><br><button>В закладки</button></div>
-            </li>
-            <li><img src="http://placehold.it/100x100" alt="Перфоратор BOSCH BFG 2000">Перфофратор BOSCH BFG 2000 
-              <button>12500 Р.</button>
-              <div class="icon-hover"><p><button>Купить</button><br><button>В закладки</button></div>
-            </li>
-          </ul>
-        </div>
-        <div class="items-pages">
-          <a href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">Следующая</a>
-        </div>
+          <div class="items-pages">
+            <ul class="pages">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">Следующая</a></li>
+            </ul>
+          </div>
+        </section>
       </section>
       <div class="item-info">
         <h2>Пара слов о перфораторах</h2>
