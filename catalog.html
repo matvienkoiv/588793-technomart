@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Техномарт</title>
+  </head>
+  <body>
+    <header class="main-header"> 
+      <nav class="user-menu">
+        <a class="header-logo" href="#">
+          <img src="http://placehold.it/150x100" alt="Логотип Техномарт">
+        </a>
+        <div class="header-search">
+          <label for="sea">Поиск</label> <!--for не ссылается на скрытый элемент name, только на id--> 
+            <input type="search" id="sea" name="sea">
+        </div>
+        <div class="header-user-interface">
+          <a class="favorites" href="#">Закладки:
+            <span class="favorites-number">0</span>
+          </a>
+          <a class="basket" href="#">Корзина:
+            <span class="basket-number">10</span>
+          </a>
+          <a class="order" href="#">Оформить заказ</a>
+        </div>
+      </nav>
+      <div class="header-info-login">
+        <p class="header-about">Интернет-магазин строительных материалов и инструментов для ремонта
+        <div class="coord">
+          <p class="number">+7 (812) 555-05-55
+          <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </div>
+      <div class="header-user-account">
+        <a class=user-name href="#">Равшан Джамшутович</a>
+        <ul user-info>
+          <li class="orders"><a href="#">Мои заказы</a></li>
+          <li class="my-acc"><a href="#">Личный кабинет</a></li>
+        </ul>
+      </div>
+      <nav class="header-menu">
+        <ul class="main-menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#">Компания</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="catalog-page">
+      <h2 class="visually-hidden">Каталог продукции</h2>
+      <ul class="nav-list">
+        <li class="list-catalog"><a href="#">Каталог</a></li>
+        <li class="list-catalog"><a href="#">Инструмент</a></li>
+        <li class="list-catalog"><a href="#">Перфораторы</a></li>
+      </ul>
+      <h2 class="product-type">Перфораторы</h2>
+      <form action="/echo" method="post">
+        <h3>Фильтр</h3>
+        <fieldset class="filter-price">
+          <label for="price">Цена:</label>
+            <span class="min-price">0</span><input type="range" min="0" max="30000" step="1" id="price"><span class="max-price">3000</span>
+        </fieldset>
+        <fieldset class="vendors">
+          <label>Производители:</label>
+          <input type="checkbox" value="v1" value="Bosch" checked>Bosch
+          <input type="checkbox" value="v2" value="Interskol">Интерскол
+          <input type="checkbox" value="v3" value="Makita" checked>makita
+          <input type="checkbox" value="v4" value="Dewalt">Dewalt
+          <input type="checkbox" value="v5" value="Hitachi">Hitachi
+        </fieldset>
+        <fieldset class="power-type">
+          <label>Питание:</label>
+          <input type="radio" name="type" value="t1">Аккумуляторные
+          <input type="radio" name="type" value="t2">Сетевые
+        </fieldset>
+        <input type="button" value="Показать" name="show-btn">
+      </form>
+      <div class="sort">
+        <h3>Сортировка</h3>
+        <ul class="sort-type">
+          <li class="sort-price"><a href="#">По цене</a></li>
+          <li class="sort-type"><a href="#">По типу</a></li>
+          <li class="sort-functional"><a href="#">По функционалу</a></li>
+          <li class="type-ascending"><a href="#">По возрастанию</a></li>
+          <li class="type-descending"><a href="#">По убыванию</a></li>
+        </ul>
+      </div>
+      <section class="items-pull">
+        <ul class="items">
+            <li><img src="http://placehold.it/100x100" alt="Перфофратор BOSCH BFG 3000">Перфофратор BOSCH BFG 3000 <span class="old-price">22500 Р.</span><button>15500 Р.</button></li>
+            <li><img src="http://placehold.it/100x100" alt="Перфофратор BOSCH BFG 6000">Перфофратор BOSCH BFG 6000 <span class="old-price">30500 Р.</span><button>25500 Р.</button></li>
+            <li class="new"><img src="http://placehold.it/100x100" alt="Перфофратор BOSCH BFG 2000">Перфофратор BOSCH BFG 2000 <button>12500 Р.</button><button>Купить</button><button>В закладки</button></li>
+            <li><img src="http://placehold.it/100x100" alt="Перфофратор BOSCH BFG 3000">Перфофратор BOSCH BFG 3000 <span class="old-price">22500 Р.</span><button>15500 Р.</button></li>
+            <li class="new"><img src="http://placehold.it/100x100" alt="Перфофратор BOSCH BFG 6000">Перфофратор BOSCH BFG 6000 <span class="old-price">30500 Р.</span><button>25500 Р.</button></li>
+            <li><img src="http://placehold.it/100x100" alt="Перфофратор BOSCH BFG 2000">Перфофратор BOSCH BFG 2000 <button>12500 Р.</button></li>
+            <li class="new"><img src="http://placehold.it/100x100" alt="Перфофратор BOSCH BFG 3000">Перфофратор BOSCH BFG 3000 <span class="old-price">22500 Р.</span><button>15500 Р.</button></li>
+            <li><img src="http://placehold.it/100x100" alt="Перфофратор BOSCH BFG 6000">Перфофратор BOSCH BFG 6000 <span class="old-price">30500 Р.</span><button>25500 Р.</button></li>
+            <li><img src="http://placehold.it/100x100" alt="Перфофратор BOSCH BFG 2000">Перфофратор BOSCH BFG 2000 <button>12500 Р.</button></li>
+        </ul>
+        <div class="items-pages">
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">Следующая</a>
+        </div>
+      </section>
+      <div class="item-info">
+        <h2>Пара слов о перфораторах</h2>
+        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+            Существуют электромеханические и пневматические перфораторы. 
+            Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
+            В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+      </div>
+    </main>
+    <footer class="main-footer">
+        <section class="footer-top">
+          <div class="footer-info">
+            <a class="footer-logo" href="#">
+              <img src="http://placehold.it/160x90" alt="Логотип Техномарт">
+            </a>
+            <p class="adress-numbler">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+              +7 (812) 555-05-55
+          </div>
+          <nav class="footer-nav">
+            <b class="visually-hidden">Навигация</b><!--Скорет CSS-->
+            <ul class="footer-main-nav">
+              <li><a href="#">Компания</a></li>
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Спецпредложения</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Контакты</a></li>    
+            </ul>
+            <ul class="footer-list-nav">
+              <li><a href="#">Материалы</a></li>
+              <li><a href="#">Техника</a></li>
+              <li><a href="#">Инструмент</a></li>
+              <li><a href="#">Спецпредложения</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section class="footer-bottom">
+          <div class="footer-socials">
+            <p class="copyright">© 2010–2017 Компания «Техномарт»<br>
+              Все права защищены
+            <p class="visually-hidden">Мы в соцсетях<!--Скорет CSS--> 
+            <ul class="socials-btn">
+              <li class="vk"><a href="#">Вконтакте</a></li>
+              <li class="fb"><a href="#">Facebook</a></li>
+              <li class="insta"><a href="#">Instagram</a></li>
+            </ul>
+            <p class="feedback">Обратная связь:<a href="#">mail@htmlacademy.ru</a>
+            <p class="developers">Разработано —<a href="#">htmlacademy.ru</a>
+          </div>
+        </section>
+      </footer>
+  </body>
+</html>
