@@ -6,46 +6,50 @@
   </head>
   <body>
     <header class="main-header"> 
+      <!--Верхняя часть хедера-->
       <nav class="user-menu">
-        <a class="header-logo" href="#">
-          <img src="img/logo-header.png" width="220" height="47" alt="Логотип Техномарт">
+        <a class="header-logo" href="index.html">
+          <img src="img/logo-header.png" width="220" height="47" alt="Логотип компании Техномарт">
         </a>
         <div class="header-search">
           <img src="img/icon-search.svg" alt="Поиск">
-          <label for="sea">Поиск</label> <!--for не ссылается на скрытый элемент name, только на id--> 
-            <input type="search" id="sea" name="sea">
+          <label for="search">Поиск</label> 
+            <input type="search" id="search" name="search">
         </div>
         <div class="header-user-interface">
           <img src="img/icon-bookmark.svg" alt="Закладки">
           <a class="favorites" href="#">Закладки:
-            <span class="favorites-number">0</span>
+            <span class="favorites-counter">0</span>
           </a>
           <img src="img/cart-icon.svg" alt="Корзина">
-          <a class="basket" href="#">Корзина:
-            <span class="basket-number">0</span>
+          <a class="basket" href="#">Корзина: 
+            <span class="basket-counter">0</span>
           </a>
-
           <a class="order" href="#">Оформить заказ</a>
         </div>
       </nav>
+      <!--Середина с контактами и формой входа-->
       <div class="header-info-login">
         <p class="header-about">Интернет-магазин строительных материалов и инструментов для ремонта
-        <div class="coord">
+        <div class="header-contacts">
           <p class="number"><img src="img/icon-phone.svg" alt="Номер">+7 (812) 555-05-55
           <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </div>
           <ul class="user-log">
             <li>
-              <a class="login-link"><img src="img/icon-login.svg" alt="Войти">Войти</a>
+              <a class="login-link" href="#"><img src="img/icon-login.svg" alt="Войти">Войти</a>
             </li>
-            <li><a class="reg-link">Регистрация</a></li>
+            <li>
+              <a class="reg-link" href="#">Регистрация</a>
+            </li>
           </ul>
-        </div>
+      </div>
+      <!--Меню хедера-->  
       <nav class="header-menu">
         <ul class="main-menu">
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Компания</a></li>
-          <li><a href="#">Каталог</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="#">Спецпредложения</a></li>
           <li><a href="#">Доставка</a></li>
@@ -53,6 +57,7 @@
         </ul>
       </nav>
     </header>
+    <!--Главная. О магазине-->
     <main class="main-page">
       <h1 class="visually-hidden">Техномарт</h1><!--Скроет CSS-->
       <section class="main-about">
@@ -64,12 +69,17 @@
           <li><span>Скидки 50% </span><a href="#">На 350 товаров</a></li>
           <li><span>Доставка </span><a href="#">Бесплатно</a></li>
         </ul>
-        <div class="main-slider">
-          <p><b>Перфораторы </b>Настоящие мужские игрушки
-          <a href="#">Открыть каталог</a>
-        </div>
+        <section class="main-slider">
+          <figure class="slider-perf">
+            <a href="#"><img src="img/slider-perf.jpg" width="620" height="266" alt="Каталог перфораторов"></a>
+            <figcaption><b>Перфораторы </b>Настоящие мужские игрушки</figcaption>
+            <a href="#">Открыть каталог</a>
+          </figure>
+          <button class="slider-btn-back">Назад</button>
+          <button class="slider-btn-next">Вперед</button>
+        </section>
       </section>
-      
+      <!--Популярные товары-->
       <section class="main-popular">
         <div class="pop-items">
           <h2>Популярные товары</h2>
@@ -82,6 +92,7 @@
           <li class="new"><img src="img/bosch-bfg-2000.jpg" width="127" height="112" alt="Перфофратор BOSCH BFG 2000">Перфофратор BOSCH BFG 2000<button>12500 Р.</button></li> <!--Обозначил классом, чтобы в CSS добавить картинку, в HTML сомнительно-->
         </ul>
       </section>
+      <!--Популярные производители-->
       <section class="main-popular-mark">
         <div class="pop-dev">
           <h2>Популярные производители</h2>
@@ -114,15 +125,16 @@
           </li>
         </ul>
       </section>
+      <!--Сервисы-->
       <section class="services">
         <h2>Сервисы</h2>
         <p>Хороший интернет-магазин отличнается от плохого не только ценами! 
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         <div class="services-description">
           <ul class="services-menu">
-            <li>Доставка</li>
-            <li>Гарантия</li>
-            <li>Кредит</li>
+            <li class="delivery"><a href="#">Доставка</a></li>
+            <li class="guarantee"><a href="#">Гарантия</a></li>
+            <li class="credit"><a href="#">Кредит</a></li>
           </ul>
           <div class="delivery">
             <h3>Доставка</h3>
@@ -130,10 +142,23 @@
                 к вашему подъезду совершенно бесплатно!
                 Ведь мы неплохо заработаем, 
                 поднимая его на ваш этаж!
-            <!--Картинку с машинкой пока не ставлю, видимо в CSS она нужна фоном к "Доставке"-->
+          </div>
+          <div class="guarantee">
+              <h3>Гарантия</h3>
+              <p>Если купленный у нас товар поломается или заискрит, 
+                  а также в случае пожара, спровоцированного его возгаранием,  
+                  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
+                  Дом уж восстановите как-нибудь сами.
+          </div>
+          <div class="guarantee">
+              <h3>Кредит</h3>
+              <p>Залезть в долговую яму стало проще! 
+                  Кредитные консультанты придут вам на помощь.
+              <button class="credit-btn">Отправить заявку</button>
           </div>
         </div>
       </section>
+      <!--Приемущества-->
       <section class="corp-about">
         <h2>Компания "Техномарт"</h2>
         <p>Настоящий мужской шоппинг начинается здесь! 
@@ -148,6 +173,7 @@
         </ul>
         <a href="#">Подробнее о компании</a>
       </section>
+      <!--Адрес в main-->
       <section class="corp-contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, 
@@ -158,20 +184,21 @@
         <button class="feedback-btn">Заблудились? Напишите нам!</button>
       </section>
     </main>
+    <!--Верхний футер-->
     <footer class="main-footer">
       <section class="footer-top">
         <div class="footer-info">
-          <a class="footer-logo" href="#">
+          <a class="footer-logo" href="index.html">
             <img src="img/logo-footer.png" width="220" height="68" alt="Логотип Техномарт">
           </a>
-          <p class="adress-numbler">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            +7 (812) 555-05-55
+          <p class="footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          <p class="footer-number">+7 (812) 555-05-55
         </div>
         <nav class="footer-nav">
           <b class="visually-hidden">Навигация</b><!--Скорет CSS-->
           <ul class="footer-main-nav">
             <li><a href="#">Компания</a></li>
-            <li><a href="#">Каталог</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
             <li><a href="#">Новости</a></li>
             <li><a href="#">Спецпредложения</a></li>
             <li><a href="#">Доставка</a></li>
@@ -185,6 +212,7 @@
           </ul>
         </nav>
       </section>
+      <!--Нижний футер-->
       <section class="footer-bottom">
         <div class="footer-socials">
           <p class="copyright">© 2010–2017 Компания «Техномарт»<br>
