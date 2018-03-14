@@ -69,15 +69,22 @@
           <li><span>Скидки 50% </span><a href="#">На 350 товаров</a></li>
           <li><span>Доставка </span><a href="#">Бесплатно</a></li>
         </ul>
-        <section class="main-slider">
-          <figure class="slider-perf">
-            <a href="#"><img src="img/slider-perf.jpg" width="620" height="266" alt="Каталог перфораторов"></a>
-            <figcaption><b>Перфораторы </b>Настоящие мужские игрушки</figcaption>
-            <a href="#">Открыть каталог</a>
-          </figure>
+        <div class="main-slider">
+          <ul class="slider">
+            <li class="slider-1">
+              <b>Перфораторы </b>Настоящие мужские игрушки
+              <img src="img/slider-1-perf.jpg" width="620" height="266" alt="Каталог перфораторов">
+              <a href="#">Открыть каталог</a>
+            </li>
+            <li class="slider-2">
+              <b>Дрели </b>Соседям на радость
+              <img src="img/slider-2-drill.jpg" width="620" height="266" alt="Катаклог дрелей">
+              <a href="#">Открыть каталог</a>
+            </li>
+          </ul>
           <button class="slider-btn-back">Назад</button>
           <button class="slider-btn-next">Вперед</button>
-        </section>
+        </div>
       </section>
       <!--Популярные товары-->
       <section class="main-popular">
@@ -86,10 +93,10 @@
           <a href="#">Все популярные товары</a>
         </div>
         <ul class="popular-items">
-          <li><img src="img/bosch-bfg-9000.jpg" width="184" height="164" alt="Перфофратор BOSCH BFG 9000">Перфофратор BOSCH BFG 9000 <span class="old-price">32500 Р.</span><button>25500 Р.</button></li>
-          <li><img src="img/bosch-bfg-3000.jpg" width="127" height="112" alt="Перфофратор BOSCH BFG 3000">Перфофратор BOSCH BFG 3000 <span class="old-price">22500 Р.</span><button>15500 Р.</button></li>
-          <li><img src="img/bosch-bfg-6000.jpg" width="124" height="128" alt="Перфофратор BOSCH BFG 6000">Перфофратор BOSCH BFG 6000 <span class="old-price">30500 Р.</span><button>25500 Р.</button></li>
-          <li class="new"><img src="img/bosch-bfg-2000.jpg" width="127" height="112" alt="Перфофратор BOSCH BFG 2000">Перфофратор BOSCH BFG 2000<button>12500 Р.</button></li> <!--Обозначил классом, чтобы в CSS добавить картинку, в HTML сомнительно-->
+          <li><a href="#"><img src="img/bosch-bfg-9000.jpg" width="184" height="164" alt="Перфофратор BOSCH BFG 9000">Перфофратор BOSCH BFG 9000 <span class="old-price">32500 Р.</span><span class="price">25500 Р.</span></a></li>
+          <li><a href="#"><img src="img/bosch-bfg-3000.jpg" width="127" height="112" alt="Перфофратор BOSCH BFG 3000">Перфофратор BOSCH BFG 3000 <span class="old-price">22500 Р.</span><span class="price">15500 Р.</span></a></li>
+          <li><a href="#"><img src="img/bosch-bfg-6000.jpg" width="124" height="128" alt="Перфофратор BOSCH BFG 6000">Перфофратор BOSCH BFG 6000 <span class="old-price">30500 Р.</span><span class="price">25500 Р.</span></a></li>
+          <li class="new"><a href="#"><img src="img/bosch-bfg-2000.jpg" width="127" height="112" alt="Перфофратор BOSCH BFG 2000">Перфофратор BOSCH BFG 2000<span class="price">12500 Р.</span></a></li>
         </ul>
       </section>
       <!--Популярные производители-->
@@ -234,5 +241,10 @@
         </div>
       </section>
     </footer>
+    <!--Всплывающее окно карты-->
+    <section class="modal modal-map">
+      <img src="img/modal-map.jpg" width="940" height="446" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      <span class="modal-close">x</span>
+    </section>
   </body>
 </html>
