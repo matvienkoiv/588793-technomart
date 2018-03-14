@@ -6,61 +6,52 @@
   </head>
   <body>
     <header class="main-header"> 
-      <!--Верхняя часть хедера-->
       <nav class="user-menu">
-        <a class="header-logo" href="index.html">
-          <img src="img/logo-header.png" width="220" height="47" alt="Логотип компании Техномарт">
+        <a class="header-logo" href="#">
+          <img src="img/logo-header.png" width="220" height="47" alt="Логотип Техномарт">
         </a>
         <div class="header-search">
-          <img src="img/icon-search.svg" alt="Поиск">
-          <label for="search">Поиск</label> 
-            <input type="search" id="search" name="search">
+          <label for="sea">Поиск</label> <!--for не ссылается на скрытый элемент name, только на id--> 
+            <input type="search" id="sea" name="sea">
         </div>
         <div class="header-user-interface">
-          <img src="img/icon-bookmark.svg" alt="Закладки">
           <a class="favorites" href="#">Закладки:
-            <span class="favorites-counter">0</span>
+            <span class="favorites-number">0</span>
           </a>
-          <img src="img/cart-icon.svg" alt="Корзина">
-          <a class="basket" href="#">Корзина: 
-            <span class="basket-counter">10</span>
+          <a class="basket" href="#">Корзина:
+            <span class="basket-number">10</span>
           </a>
           <a class="order" href="#">Оформить заказ</a>
         </div>
       </nav>
-      <!--Середина с контактами и формой входа-->
       <div class="header-info-login">
         <p class="header-about">Интернет-магазин строительных материалов и инструментов для ремонта
         <div class="header-contacts">
-          <p class="number"><img src="img/icon-phone.svg" alt="Номер">+7 (812) 555-05-55
+          <p class="number">+7 (812) 555-05-55
           <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </div>
         <div class="user-cabinet">
-          <p><img src="img/icon-user.svg" alt="Аватар пользоваеля">
-          <a class="user-name" href="#">Равшан Джамшутович</a>
-          <a href="#"><img src="img/icon-logout.svg" alt="Выйти"></a>
+          <p><a class="user-name" href="#">Равшан Джамшутович</a>
           <ul class="user-info">
             <li class="orders"><a href="#">Мои заказы</a></li>
             <li class="my-acc"><a href="#">Личный кабинет</a></li>
           </ul>
         </div>
       </div>
-      <!--Меню хедера-->  
       <nav class="header-menu">
-          <ul class="main-menu">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="#">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Спецпредложения</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
+        <ul class="main-menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#">Компания</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
     </header>
     <main class="catalog-page">
       <h2 class="visually-hidden">Каталог продукции</h2>
-      <a href="index.html"><img src="img/icon-home.svg" alt="Главная"></a>
       <ul class="breadcrumbs"> <!--Хлебные крошки-->
         <li class="list-catalog"><a href="#">Каталог</a></li>
         <li class="list-catalog"><a href="#">Инструмент</a></li>
@@ -87,7 +78,7 @@
               <input type="radio" name="type" value="t1">Аккумуляторные
               <input type="radio" name="type" value="t2">Сетевые
             </fieldset>
-            <input type="button" value="Показать" name="show-btn">
+            <input type="submit" value="Показать" name="show-btn">
           </form>
           <section class="items">
             <div class="sort">
@@ -104,55 +95,40 @@
             </div>
             <div class="items-pull">  
               <ul class="items">
-                <li><img src="img/bosch-bfg-3000.jpg" width="127" height="112" alt="Перфофратор BOSCH BFG 3000">
-                  <a href="#">Перфофратор BOSCH BFG 3000</a>
-                  <span class="old-price">22500 Р.</span>
-                  <span class="price">15500 Р.</span>
+                <li><img src="img/bosch-bfg-3000.jpg" width="127" height="112" alt="Перфофратор BOSCH BFG 3000">Перфофратор BOSCH BFG 3000 
+                  <span class="old-price">22500 Р.</span><button>15500 Р. </button>
                   <div class="icon-hover"><button>Купить </button><button>В закладки</button></div>
                 </li>
-                <li><img src="img/bosch-bfg-6000.jpg" width="124" height="128" alt="Перфофратор BOSCH BFG 6000">
-                  <a href="#">Перфофратор BOSCH BFG 6000</a>
-                  <span class="old-price">30500 Р.</span>
-                  <span class="price">25500 Р.</span>
+                <li><img src="img/bosch-bfg-6000.jpg" width="124" height="128" alt="Перфофратор BOSCH BFG 6000">Перфофратор BOSCH BFG 6000 
+                  <span class="old-price">30500 Р.</span><button>25500 Р. </button>
                   <div class="icon-hover"><button>Купить </button><button>В закладки</button></div>
                 </li>
-                <li class="new"><img src="img/bosch-bfg-2000.jpg" width="127" height="112" alt="Перфофратор BOSCH BFG 2000">
-                  <a href="#">Перфофратор BOSCH BFG 2000</a>
-                  <span class="price">12500 Р.</span>
+                <li class="new">Перфофратор BOSCH BFG 2000 
+                  <button>12500 Р. </button>
                   <div class="icon-hover"><button>Купить </button><button>В закладки</button></div>
                 </li>
-                <li><img src="img/bosch-bfg-3000.jpg" width="127" height="112" alt="Перфофратор BOSCH BFG 3000">
-                  <a href="#">Перфофратор BOSCH BFG 3000</a>
-                  <span class="old-price">22500 Р.</span>
-                  <span class="price">15500 Р.</span>
+                <li><img src="img/bosch-bfg-3000.jpg" width="127" height="112" alt="Перфофратор BOSCH BFG 3000">Перфофратор BOSCH BFG 3000 
+                  <span class="old-price">22500 Р.</span><button>15500 Р. </button>
                   <div class="icon-hover"><button>Купить </button><button>В закладки</button></div>
                 </li>
-                <li class="new"><img src="img/bosch-bfg-6000.jpg" width="124" height="128" alt="Перфофратор BOSCH BFG 6000">
-                  <a href="#">Перфофратор BOSCH BFG 6000</a>
-                  <span class="old-price">30500 Р.</span>
-                  <span class="price">25500 Р.</span>
+                <li class="new"><img src="img/bosch-bfg-6000.jpg" width="124" height="128" alt="Перфофратор BOSCH BFG 6000">Перфофратор BOSCH BFG 6000 
+                  <span class="old-price">30500 Р. </span><button>25500 Р. </button>
                   <div class="icon-hover"><button>Купить </button><button>В закладки</button></div>
                 </li>
-                <li><img src="img/bosch-bfg-2000.jpg" width="127" height="112" alt="Перфофратор BOSCH BFG 2000">
-                  <a href="#">Перфофратор BOSCH BFG 2000</a>
-                  <span class="price">12500 Р.</span>
+                <li><img src="img/bosch-bfg-2000.jpg" width="127" height="112" alt="Перфофратор BOSCH BFG 2000">Перфофратор BOSCH BFG 2000 
+                  <button>12500 Р. </button>
                   <div class="icon-hover"><button>Купить </button><button>В закладки</button></div>
                 </li>
-                <li class="new"><img src="img/bosch-bfg-3000.jpg" width="127" height="112" alt="Перфофратор BOSCH BFG 3000">
-                  <a href="#">Перфофратор BOSCH BFG 3000</a>
-                  <span class="old-price">22500 Р.</span>
-                  <span class="price">15500 Р.</span>
+                <li class="new"><img src="img/bosch-bfg-3000.jpg" width="127" height="112" alt="Перфофратор BOSCH BFG 3000">Перфофратор BOSCH BFG 3000 
+                  <span class="old-price">22500 Р.</span><button>15500 Р. </button>
                   <div class="icon-hover"><button>Купить </button><button>В закладки</button></div>
                 </li>
-                <li><img src="img/bosch-bfg-6000.jpg" width="124" height="128" alt="Перфофратор BOSCH BFG 6000">
-                  <a href="#">Перфофратор BOSCH BFG 6000</a>
-                  <span class="old-price">30500 Р.</span>
-                  <span class="price">25500 Р.</span>
+                <li><img src="img/bosch-bfg-6000.jpg" width="124" height="128" alt="Перфофратор BOSCH BFG 6000">Перфофратор BOSCH BFG 6000 
+                  <span class="old-price">30500 Р.</span><button>25500 Р. </button>
                   <div class="icon-hover"><button>Купить </button><button>В закладки</button></div>
                 </li>
-                <li><img src="img/bosch-bfg-2000.jpg" width="127" height="112" alt="Перфофратор BOSCH BFG 2000">
-                  <a href="#">Перфофратор BOSCH BFG 2000</a>
-                  <bspan class="price">12500 Р. </span>
+                <li><img src="img/bosch-bfg-2000.jpg" width="127" height="112" alt="Перфофратор BOSCH BFG 2000">Перфофратор BOSCH BFG 2000 
+                  <button>12500 Р. </button>
                   <div class="icon-hover"><button>Купить </button><button>В закладки</button></div>
                 </li>
               </ul>
@@ -173,21 +149,20 @@
             В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
       </div>
     </main>
-    <!--Верхний футер-->
     <footer class="main-footer">
         <section class="footer-top">
           <div class="footer-info">
-            <a class="footer-logo" href="index.html">
-              <img src="img/logo-footer.png" width="220" height="68" alt="Логотип Техномарт">
+            <a class="footer-logo" href="#">
+              <img src="img/logo-footer.png" width="220" height="68" alt="Логотип Техномарт"> 
             </a>
-            <p class="footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-            <p class="footer-number">+7 (812) 555-05-55
+            <p class="adress-numbler">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+              +7 (812) 555-05-55
           </div>
           <nav class="footer-nav">
             <b class="visually-hidden">Навигация</b><!--Скорет CSS-->
             <ul class="footer-main-nav">
               <li><a href="#">Компания</a></li>
-              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="#">Каталог</a></li>
               <li><a href="#">Новости</a></li>
               <li><a href="#">Спецпредложения</a></li>
               <li><a href="#">Доставка</a></li>
@@ -201,22 +176,15 @@
             </ul>
           </nav>
         </section>
-        <!--Нижний футер-->
         <section class="footer-bottom">
           <div class="footer-socials">
             <p class="copyright">© 2010–2017 Компания «Техномарт»<br>
               Все права защищены
             <p class="visually-hidden">Мы в соцсетях<!--Скорет CSS--> 
             <ul class="socials-btn">
-              <li class="vk">
-                <a href="#"><img src="img/icon-vk.svg" alt="Вконтакте">Вконтакте</a>
-              </li>
-              <li class="fb">
-                <a href="#"><img src="img/icon-fb.svg" alt="Facebook">Facebook</a>
-              </li>
-              <li class="insta">
-                  <a href="#"><img src="img/icon-insta.svg" alt="Instagram">Instagram</a>
-              </li>
+              <li class="vk"><a href="#">Вконтакте</a></li>
+              <li class="fb"><a href="#">Facebook</a></li>
+              <li class="insta"><a href="#">Instagram</a></li>
             </ul>
             <p class="feedback">Обратная связь:<a href="#">mail@htmlacademy.ru</a>
             <p class="developers">Разработано —<a href="#">htmlacademy.ru</a>
