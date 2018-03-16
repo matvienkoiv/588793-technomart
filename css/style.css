@@ -1,0 +1,82 @@
+body {
+   margin: 0;
+   padding: 0;
+
+   font-family: "Cuprum", Arial, sans-serif;
+   font-size: 17px;
+   line-height: 17px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-search,
+.header-user-interface {
+    line-height: 18px;
+}
+
+.user-menu, 
+.header-menu {
+    background-color:#293449;
+    }
+.header-info-login {
+    background-color: #f3f7f8;
+}
+
+header a {
+    color:#ffffff;
+}
+
+.header-search label{
+    color:#ffffff;
+}
+
+.order {
+    background-color: #63a63e;
+}
+
+.header-about, 
+.number {
+    color: #ee3643;
+}
+
+.header-about {
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+}
+
+.number {
+    font-size: 21px;
+    line-height: 21px;
+    border: 3px solid #ffffff;
+}
+
+.adress {
+    font-size: 14px;
+    line-height: 24px;
+    color: #32425c;
+}
+
+.user-log, 
+.main-menu {
+    list-style: none;
+}
+
+.login-link,
+.reg-link {
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.header-search input[type="search"] {
+    background-color:#293449;
+    border: none;
+}
+
+.header-icon {
+    fill: rgb(255, 255, 255);
+}
