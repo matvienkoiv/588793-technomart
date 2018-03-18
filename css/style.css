@@ -21,7 +21,6 @@ ul {
     width: 1px;
     height: 1px;
     margin: -1px;
-    …
   }
 
 /*Стилизация блока header*/
@@ -33,8 +32,9 @@ ul {
 
 .user-menu, 
 .header-menu {
-    background-color:#293449;
-    }
+    background-color:#32425c;
+}
+
 .header-info-login {
     background-color: #f3f7f8;
 }
@@ -43,12 +43,30 @@ header a {
     color:#ffffff;
 }
 
-.header-search label{
+.header-search input{
     color:#ffffff;
+}
+
+#search:focus {
+    background-color: #ffffff;
+    color:#000000;
+}
+
+.bookmarks:active, 
+.cart:active {
+    background-color: #161d29;
 }
 
 .order {
     background-color: #63a63e;
+}
+
+.order:hover {
+    background-color: #5fbb2d;
+}
+
+.order:active {
+    background-color: #518534;
 }
 
 .header-about, 
@@ -82,9 +100,64 @@ header a {
     background-color: #ffffff;
 }
 
+.login-link:hover,
+.reg-link:hover {
+    color: #ee3643;
+}
+
+.login-link:active,
+.reg-link:active {
+    color: #cacaca;
+}
+
 .header-search input[type="search"] {
     background-color:#293449;
     border: none;
+}
+
+.search-icon, 
+.bookmark-icon, 
+.cart-icon {
+    fill:#ffffff;
+    opacity: 0.3;
+}
+
+.search-icon:hover, 
+.bookmark-icon:hover, 
+.cart-icon:hover {
+    fill:#ffffff;
+    opacity: 1;
+}
+
+.phone-icon, 
+.login-icon {
+    fill: #b7bfc8;
+}
+
+.login-icon {
+    opacity: 0.3;
+}
+ 
+.login-icon:hover {
+    fill: #32425c;
+    opacity: 1;
+}
+
+.login-icon:active {
+    opacity: 0.3;
+}
+
+.header-menu {
+    box-shadow: inset 0 -3px #293449;
+}
+
+.main-menu li:hover {
+    background-color: #293449;
+}
+
+.main-menu a:active {
+    background-color: #293449;
+    color: #a8abaf;
 }
 
 
@@ -131,12 +204,28 @@ main {
     background-color: #8ed78f;
 }
 
+.icon-1, 
+.icon-2, 
+.icon-3, 
+.icon-4, 
+.icon-5 {
+    fill: #ffffff;
+}
+
 .delivery-main {
     background-color: #ffc047;
 }
 
 .all a {
-    background-color: rgba(0,0,0,0.1)
+    background-color: rgba(0,0,0,0.1);
+}
+
+.all a:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.all a:active {
+    background-color: rgba(0,0,0,0.3);
 }
 
 .main-slider b {
@@ -155,6 +244,14 @@ main {
     line-height: 18px;
     color:#ffffff;
     background-color: #ee3643;
+}
+
+.more:hover {
+    background-color: #ca2c37;
+}
+
+.more:active {
+    background-color: #ba2732;
 }
 
 .pop-items,
@@ -199,6 +296,10 @@ main {
     border: 1px solid #eaeaea;
 }
 
+.label li:hover {
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.5); /*Надо поставить корретные значения*/
+}
+
 .services {
     background-color: #f4f8f9;
 }
@@ -216,12 +317,21 @@ main {
     color: #000000;
 }
 
-.services-menu a{
+.services-menu a {
     font-size: 21px;
     line-height: 30px;
     font-weight: bold;
     color: #ffffff;
     background-color: #32425c;
+}
+
+.services-menu a:hover {
+    background-color: #293449;
+}
+
+.services-menu a:active {
+    background-color: #ffffff;
+    color: #32425c;
 }
 
 .delivery h3 {
@@ -236,4 +346,98 @@ main {
     line-height: 24px;
     color: #32425c;
 }
+
+.corp-about h2, 
+.corp-contacts h2 {
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.corp-about p, 
+.corp-contacts p {
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.tarnsport-list {
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+}
+
+
+
+/*Стилизация футера*/
+
+.footer-top {
+    background-color: #32425c;
+}
+
+.footer-bottom {
+    font-size: 16px;
+    line-height: 18px;
+    background-color: #293449;
+}
+
+.footer-info, 
+.footer-nav, {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footer-info, 
+.footer-main-nav a,
+.footer-socials p {
+    color: #ffffff;
+}
+
+.main-footer a:hover, 
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.footer-main-nav a:active {
+    color: rgba(255,255,255,0.5);
+}
+
+.footer-list-nav a, 
+.footer-socials a {
+    color: #ffd180;
+}
+
+.footer-list-nav a:active {
+    color: rgba(255,209,128,0.5);
+}
+
+.footer-bottom a:active {
+    color: #ee3643;
+}
+
+.feedback-btn, 
+.credit-btn {
+    font-size: 14px;
+    line-height: 18px;
+    color:#ffffff;
+    background-color: #ee3643;
+    border: none;
+}
+
+.socials-btn li {
+    width: 41px;
+    height: 42px;
+    background-color: #212a3a;
+    border-radius: 50%;
+}
+
+.socials-btn li:hover, 
+.socials-btn li:active {
+    background-color: #ee3643;
+}
+
+.socials {
+    fill: #ffffff;
+}
+
 
