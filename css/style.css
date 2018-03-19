@@ -57,6 +57,10 @@ header a {
     background-color: #161d29;
 }
 
+.catalog {
+    background-color: #ee3643;
+}
+
 .order {
     background-color: #63a63e;
 }
@@ -108,6 +112,54 @@ header a {
 .login-link:active,
 .reg-link:active {
     color: #cacaca;
+}
+
+.header-info-login {
+    background-color: #ffffff;
+}
+
+.user-name {
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.user-name:hover {
+    color: #000000;
+}
+
+.user-name:active {
+    color: #cacaca;
+}
+
+.user-icon, 
+.exit-icon {
+    fill: #c5c5c5;
+}
+
+.user-icon:hover, 
+.exit-icon:hover {
+    fill: #32425c;
+}
+
+.user-icon:active, 
+.exit-icon:active {
+    fill: #c5c5c5;
+}
+
+.user-info a {
+    font-size: 16px;
+    line-height: 18px;
+    color: #32425c;
+    text-decoration: underline;
+}
+
+.user-info a:hover {
+    color: #ee3643;
+}
+
+.user-info a:active {
+    color: #c5cad0;
 }
 
 .header-search input[type="search"] {
@@ -179,6 +231,17 @@ main {
     font-size: 14px;
     line-height: 18px;
     color: #ffffff; 
+}
+
+.breadcrumbs {
+    font-size: 13px;
+    line-height: 18px;
+    font-family: 'PT Sans', sans-serif;
+    color: #000000;
+}
+
+.product-type {
+    background-color: #f2f6f8;
 }
 
 .materials {
@@ -260,7 +323,8 @@ main {
 }
 
 .pop-items h2,
-.pop-dev h2 {
+.pop-dev h2, 
+.product-type {
     font-size: 30px;
     line-height: 30px;
     color: #32425c;
