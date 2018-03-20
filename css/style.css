@@ -49,44 +49,63 @@ ul {
     background-color:#32425c;
 }
 
-.user-menu:hover {
-    background-color: #293449;
-}
-
-.user-menu:hover .header-logo {
-    box-shadow: inset 0px -5px #9a212a;
+.header-logo:hover {
     background-color: #ca2c37;
 }
 
-.user-menu:hover .search-icon, 
-.user-menu:hover .bookmark-icon, 
-.user-menu:hover .cart-icon {
+.header-search:hover, 
+.bookmarks:hover, 
+.cart:hover {
+    background-color: #212a3a;
+}
+
+.header-search:hover .search-icon, 
+.bookmarks:hover .bookmark-icon, 
+.cart:hover .cart-icon {
     fill: #ffffff;
     opacity: 1;
 }
 
-.user-menu:hover .order {
+.cart-active {
+    background-color: #ee3643;
+}
+
+.cart-active:hover .cart-icon {
+    opacity: 1;
+}
+
+.cart-active:active {
+    opacity: 0.3;
+}
+
+.order:hover {
     background-color: #5fbb2d;
 }
 
-.user-menu:active {
-    background-color:#293449;
+.header-logo:active {
+    background-color: #ba2732;
 }
 
-.user-menu:active .bookmarks, 
-.user-menu:active .cart{
-    background-color: #161d29;
+.bookmarks:active, 
+.cart:active {
+    opacity: 0.3;
 }
 
-.user-menu:active .order {
-    background-color: #518534;
+#search {
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
 }
 
-.user-menu:active .search-icon, 
-.user-menu:active .bookmark-icon, 
-.user-menu:active .cart-icon {
+.bookmarks:active .bookmark-icon, 
+.cart:active .cart-icon {
     opacity:0.3;
 }
+
+.order:active {
+    color:rgba(255,255,255,0.3);
+    background-color: #518534;
+}    
 
 .header-info-login {
     background-color: #f3f7f8;
@@ -94,15 +113,6 @@ ul {
 
 header a {
     color:#ffffff;
-}
-
-.header-search input{
-    color:#ffffff;
-}
-
-#search:focus {
-    background-color: #ffffff;
-    color:#000000;
 }
 
 .catalog {
@@ -198,11 +208,6 @@ header a {
     color: #c5cad0;
 }
 
-.header-search input[type="search"] {
-    background:#293449;
-    border: none;
-}
-
 .search-icon, 
 .bookmark-icon, 
 .cart-icon {
@@ -259,11 +264,17 @@ main {
     color: #ffffff; 
 }
 
-.breadcrumbs {
+.breadcrumbs a {
     font-size: 13px;
     line-height: 18px;
     font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
     color: #000000;
+}
+
+.home-icon, 
+.breadcrumbs-icon {
+    fill: #c1c6ce;
 }
 
 form h3, 
@@ -336,8 +347,11 @@ fieldset {
     text-decoration: underline #ee3643;
 }
 
-.sort-type .active {
+.sort-active a{
     color: #ee3643;
+    opacity: 1;
+    text-decoration: none;
+
 }
 
 .icon-dir-up, 
@@ -348,6 +362,11 @@ fieldset {
 .icon-dir-up:hover, 
 .icon-dir-down:hover {
     fill: #000000;
+}
+
+.activ-dir-icon .icon-dir-up{
+    fill: #ee3643;
+    opacity: 1;
 }
 
 .vendors span {
@@ -506,6 +525,11 @@ fieldset {
     border: 1px solid #ee3643;
 }
 
+.pagination-item .list-active {
+    color:#ffffff;
+    background-color: #ee3643;
+}
+
 .radio-btn-active, 
 .radio-btn, 
 .checked-on, 
@@ -565,6 +589,11 @@ fieldset {
 .service-active a {
     background-color: #ffffff;
     color: #32425c;
+}
+
+.service-active a:hover {
+    color: #ffffff;
+    background-color: #293449;
 }
 
 .delivery h3 {
