@@ -13,6 +13,7 @@ a {
 
 ul {
     list-style: none;
+    padding-left: 0px;
 }
 
 .visually-hidden {
@@ -32,12 +33,10 @@ ul {
 
 .header-logo {
     background-color: #ee3643;
-    box-shadow: inset 0px -5px #b52933;
-    width: 220px;
-    height: 47px;
+    box-shadow: 0px 5px #b52933;
 }
 
-.logo-text {
+.header-logo {
     font-size: 24px;
     line-height: 24px;
     color: #ffffff;
@@ -107,10 +106,6 @@ ul {
     background-color: #518534;
 }    
 
-.header-info-login {
-    background-color: #f3f7f8;
-}
-
 header a {
     color:#ffffff;
 }
@@ -162,10 +157,6 @@ header a {
 .login-link:active,
 .reg-link:active {
     color: #cacaca;
-}
-
-.header-info-login {
-    background-color: #ffffff;
 }
 
 .user-name {
@@ -230,7 +221,7 @@ header a {
 }
 
 .header-menu {
-    box-shadow: inset 0 -3px #293449;
+    box-shadow: inset 0 -5px #293449;
 }
 
 .main-menu li:hover {
@@ -759,5 +750,104 @@ fieldset {
 .socials {
     fill: #ffffff;
 }
+
+
+
+/*Блок с позиционированием*/
+
+
+/*Верхнее меню пользователя*/
+.wrapper-page {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+.main-header {
+    background-color: #f4f7f9;
+} 
+
+.user-menu {
+    display: flex;
+    min-height: 42px;
+}
+
+.header-logo {
+    display: block;
+    width: 220px;
+    margin-left: 130px;
+    text-align: center;
+}
+
+.header-user-interface {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 130px;
+    width: 720px;
+    text-align: center;
+}
+
+.header-search {
+    min-width: 260px;
+}
+
+.bookmarks {
+    min-width: 160px;
+}
+
+.cart, 
+.order {
+    min-width: 150px;
+}       /* Вопросы по данному меню:
+            1. Коректно ли задал св-во display для блоков? 
+            2. Корректно ли задавать такую минимальную ширину? Руководствовался тем, что все блоки разной ширины
+            3. С поиском разберусь чуть позже (с корректным отображением)
+            4. Как выровнять текст по центру везде (касается всех блоков) */
+
+
+
+
+
+
+.header-info-login {
+    min-height: 280px;
+    min-width: 1020px;
+    margin-right: 130px;
+    justify-content: flex-end;
+    display: flex;
+}  /* Блок со входом, адресом и номером телефона пропускаю, 
+        не совсем понимаю, как лучше его сделать, от чего отталкиваться.
+        Указал самый минимум, чтоб не мешался */
+
+
+/*Главное меню*/
+.header-menu {
+    display: block;
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 60px;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+}  /*Во всем главном меню тоже непонятно, как же лучше выставить display и выровнять по центру, 
+      также есть еще очень важный вопрос: как правильно сделать так, 
+      чтобы при выделении пункта меню выделялся не только текст, но и область вокруг
+      + меню это на 40px поднято вверх, поднять не получается, вместо этого отталкивает это меню всё вниз*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
