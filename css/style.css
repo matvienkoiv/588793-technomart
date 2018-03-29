@@ -13,7 +13,8 @@ a {
 
 ul {
     list-style: none;
-    padding-left: 0px;
+    margin: 0;
+    padding: 0px;
 }
 
 .visually-hidden {
@@ -753,90 +754,151 @@ fieldset {
 
 
 
+
+
+
+
+
+
 /*Блок с позиционированием*/
 
 
 /*Верхнее меню пользователя*/
-.wrapper-page {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+.wrapper {
+    max-width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
 }
     
 .main-header {
     background-color: #f4f7f9;
+    padding-bottom: 60px;
+    margin-bottom: 59;
 } 
-
-.user-menu {
-    display: flex;
-    min-height: 42px;
-}
-
-.header-logo {
-    display: block;
-    width: 220px;
-    margin-left: 130px;
-    text-align: center;
-}
 
 .header-user-interface {
     display: flex;
-    justify-content: flex-end;
-    margin-right: 130px;
-    width: 720px;
-    text-align: center;
+    min-height: 42px;
+    justify-content: space-around;
+}
+
+.header-logo {
+    padding-left: 56px;
+    padding-right: 56px;
+    line-height: 42px;
 }
 
 .header-search {
-    min-width: 260px;
+    padding-left: 17px;
+    line-height: 42px;
+}
+
+.user-menu svg {
+    margin-right: 15px;
 }
 
 .bookmarks {
-    min-width: 160px;
+    padding-left: 18px;
+    padding-right: 28px;
+    line-height: 42px;
 }
 
-.cart, 
+.cart {
+    padding-left: 27px;
+    padding-right: 32px;
+    line-height: 42px;
+}
+
 .order {
-    min-width: 150px;
-}       /* Вопросы по данному меню:
-            1. Коректно ли задал св-во display для блоков? 
-            2. Корректно ли задавать такую минимальную ширину? Руководствовался тем, что все блоки разной ширины
-            3. С поиском разберусь чуть позже (с корректным отображением)
-            4. Как выровнять текст по центру везде (касается всех блоков) */
+    padding-left: 22px;
+    padding-right: 22px;
+    line-height: 42px;
+    margin-left: auto;
+}
 
+/*Середина хедера с контактами и формой входа*/
 
-
-
-
-
-.header-info-login {
-    min-height: 280px;
-    min-width: 1020px;
-    margin-right: 130px;
-    justify-content: flex-end;
+.header-info-login { 
     display: flex;
-}  /* Блок со входом, адресом и номером телефона пропускаю, 
-        не совсем понимаю, как лучше его сделать, от чего отталкиваться.
-        Указал самый минимум, чтоб не мешался */
+    padding: 46px 0 47px 53px;
+}
 
+.header-about {
+    margin: 0;
+    width: 198px;
+    margin-right: 60px;
+}
+
+.number {
+    margin: 0;
+    padding: 12px 48px 14px 10px;
+    margin-bottom: 6px;
+}
+
+.phone-icon {
+    margin-right: 35px;
+}
+
+.adress {
+    margin: 0;
+    padding-left: 10px;
+}
+
+.user-log {
+    display: flex;
+    margin-left: auto;
+}
+
+.login-link {
+    padding: 16px 25px 16px 15px;
+    margin-right: 10px;
+}
+
+.login-icon {
+    margin-right: 15px;
+}
+
+.reg-link {
+    padding: 16px 25px 16px 25px;
+}
 
 /*Главное меню*/
-.header-menu {
-    display: block;
-    width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-    min-height: 60px;
-}
-
 .main-menu {
     display: flex;
-    justify-content: space-between;
-}  /*Во всем главном меню тоже непонятно, как же лучше выставить display и выровнять по центру, 
-      также есть еще очень важный вопрос: как правильно сделать так, 
-      чтобы при выделении пункта меню выделялся не только текст, но и область вокруг
-      + меню это на 40px поднято вверх, поднять не получается, вместо этого отталкивает это меню всё вниз*/
+    min-height: 60px;
+}  
 
+.main-menu li {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Main*/
+
+.main-about {
+    margin-top: 60px;
+}
+
+/*Карточки*/
+
+.all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.all li {
+    width: 300px;
+}
+
+.all-logo {
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-bottom: 80px;
+}
 
 
 
