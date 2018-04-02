@@ -242,14 +242,14 @@ main {
     background-color: #ffffff;
 }
 
-.all span {
+.block span {
     font-size: 24px;
     line-height: 30px;
     font-weight: bold;
     color: #ffffff;
 }
 
-.all a {
+.block a {
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
@@ -367,9 +367,6 @@ fieldset {
     text-transform: uppercase; 
 }
    
-.product-type {
-    background-color: #f2f6f8;
-}
 
 .materials {
     background-color: #ffbf47;
@@ -406,15 +403,15 @@ fieldset {
     background-color: #ffc047;
 }
 
-.all a {
+.block a {
     background-color: rgba(0,0,0,0.1);
 }
 
-.all a:hover {
+.block a:hover {
     background-color: rgba(0,0,0,0.2);
 }
 
-.all a:active {
+.block a:active {
     background-color: rgba(0,0,0,0.3);
 }
 
@@ -426,7 +423,7 @@ fieldset {
     text-transform: uppercase;
 }
 
-.main-slider p {
+.main-slider span {
     font-size: 18px;
     line-height: 24px;
     color: #ffffff;
@@ -491,11 +488,6 @@ fieldset {
 .popular-items li,
 .label li {
     border: 1px solid #eaeaea;
-}
-
-.popular-items li {
-    width:220px;
-    height: 318px;
 }
 
 .pagination-list a {
@@ -802,6 +794,7 @@ fieldset {
     padding-left: 18px;
     padding-right: 28px;
     line-height: 42px;
+    margin-left: auto;
 }
 
 .cart {
@@ -814,7 +807,6 @@ fieldset {
     padding-left: 22px;
     padding-right: 22px;
     line-height: 42px;
-    margin-left: auto;
 }
 
 /*Середина хедера с контактами и формой входа*/
@@ -846,6 +838,7 @@ fieldset {
 }
 
 .user-log {
+    margin: 0;
     display: flex;
     margin-left: auto;
 }
@@ -880,26 +873,93 @@ fieldset {
 
 .main-about {
     margin-top: 60px;
+    padding-bottom: 54px;
 }
 
 /*Карточки*/
 
-.all {
+.list-1 {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.list-2 {
+    display: flex;
+}
+
+.slider-1 {
+    display: none; /*Пока спрячем слайдер 1*/
+}
+
+.main-slider {
+    position: relative;
+    width: 620px;
+    height: 266px;
+}
+
+.main-slider img {
+    display: inline-block;
+}
+
+.slider-text {
+    position: absolute;
+    top: 26px;
+    left: 24px;
+}
+
+.slider-text span {
+    margin-top: 10px;
+}
+
+.slider-btn-back {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    text-decoration: none;
+}
+
+.slider-btn-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.main-slider a {
+    position: absolute;
+    padding: 15px 45px 15px 45px;
+    bottom: 22px;
+    left: 25px;
+    border-radius: 4px;
+}
+
+/*Популярные товары*/
+.pop-items {
+    padding: 25px;
+    padding-left: 30px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.pop-items h2 {
+    display: block;
+    margin: 0;
+    padding-top: 8px;
+}
+
+.pop-items .more {
+    padding: 14px 56px 14px 56px;
+    margin-left: auto;
+    border-radius: 5px;
+}
+
+.popular-items {
+    display: flex;
     justify-content: space-between;
 }
 
-.all li {
-    width: 300px;
-}
-
-.all-logo {
-    padding-top: 30px;
-    padding-left: 25px;
-    padding-bottom: 80px;
-}
-
+.popular-items li {
+    width: 220px;
 
 
 
